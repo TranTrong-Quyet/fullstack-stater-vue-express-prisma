@@ -1,10 +1,14 @@
 <script setup lang="ts">
+//
+import { VueQueryDevtools } from '@tanstack/vue-query-devtools'
+
 import { RouterLink, RouterView } from 'vue-router'
 import ModeToggle from './components/ui/color-mode-toggle/ModeToggle.vue';
 
 </script>
 
 <template>
+  <VueQueryDevtools />
   <header class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-transparent">
     <!-- Logo on the left -->
     <div class="flex items-center">
